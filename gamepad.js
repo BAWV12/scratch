@@ -87,11 +87,11 @@
           // report the stick's previous direction
           return ext.stickDirection[stick];
         }
-        var value = 180 * Math.atan2(x, y) / Math.PI;
+        var value = 100*x;
         ext.stickDirection[stick] = value;
         return value;
       case "force":
-        return Math.sqrt(x*x + y*y) * 100;
+        return 100*y;
     }
   };
 
