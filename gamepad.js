@@ -76,7 +76,7 @@
     var x, y;
     switch (stick) {
       case "left":  x = ext.gamepad.axes[0]; y = -ext.gamepad.axes[1]; break;
-      case "right": x = ext.gamepad.axes[2]; y = -ext.gamepad.axes[3]; break;
+      case "right": x = ext.gamepad.axes[0]; y = -ext.gamepad.axes[2]; break;
     }
     if (-DEADZONE < x && x < DEADZONE) x = 0;
     if (-DEADZONE < y && y < DEADZONE) y = 0;
