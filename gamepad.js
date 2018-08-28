@@ -1,3 +1,4 @@
+//https://bawv12.github.io/scratch/gamepad.js
 (function(ext) {
 
   var DEADZONE = 0;
