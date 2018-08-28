@@ -81,22 +81,22 @@
 	deflect= ext.gamepad.axes[0];
 	return deflect;
       case "Y": 
-	deflect= -1*ext.gamepad.axes[1];
+	deflect= -100*ext.gamepad.axes[1];
 	return deflect;
       case "Throttle": 
-	deflect= -1*ext.gamepad.axes[2];
+	deflect= -100*ext.gamepad.axes[2];
 	return deflect;
       case "Rudder": 
-	deflect= ext.gamepad.axes[3];
+	deflect= 100*ext.gamepad.axes[3];
 	return deflect;
       case "Pan": 
-	deflect= ext.gamepad.axes[4];
+	deflect= 100*ext.gamepad.axes[4];
 	return deflect;
       case "POV X": 
-	deflect= ext.gamepad.axes[5];
+	deflect= 100*ext.gamepad.axes[5];
 	return deflect;
       case "POV Y": 
-	deflect= -1*ext.gamepad.axes[6];
+	deflect= -100*ext.gamepad.axes[6];
 	return deflect;
     }
 
